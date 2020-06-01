@@ -22,7 +22,7 @@ def shaws(store_number):
     Keyword arguments:
         store_number -- Your local store number.  Example: 00624
     """
-    base_url = 'https://circulars-prod.cpnscdn.com/pdf-cache/Shaws/19_{}_SHW_WC_S/stores/{:05d}.pdf'
+    base_url = 'https://circulars-prod.cpnscdn.com/pdf-cache/Shaws/20_{}_SHW_WC_S/stores/{:05d}.pdf'
 
     # Calculate week number for the flyer.
     week = (int(datetime.date.today().strftime("%U")) + 52) % 52
