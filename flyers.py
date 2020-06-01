@@ -25,7 +25,7 @@ def shaws(store_number):
     base_url = 'https://circulars-prod.cpnscdn.com/pdf-cache/Shaws/19_{}_SHW_WC_S/stores/{:05d}.pdf'
 
     # Calculate week number for the flyer.
-    week = int(datetime.date.today().strftime("%U")) % 52 + 51
+    week = (int(datetime.date.today().strftime("%U")) + 52) % 52
     return base_url.format(week, store_number)
 
 
